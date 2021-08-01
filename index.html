@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio #5</title>
+    <link rel='stylesheet' href='https://bootswatch.com/4/cerulean/bootstrap.min.css'>
+</head>
+
+<body>
+    <div class="main_div">
+    <h1>Problemas usando JS con HTML tablas</h1>
+    <div class="form_div">
+    <form id="student_form">
+        <label for="" class='col-md-1'>Nombre</label>
+        <input name="student_name" type="text" class='col-md-3'>
+        <br>
+        <label for="" class='col-md-1'>Edad</label>
+        <input name="student_age" type="text" class='col-md-3'>
+        <br>
+        <label for="" class='col-md-1'>Pasatiempos</label>
+        <input name="student_hobbies" type="text" class='col-md-3'>
+        <br>
+        <button type="submit" class='btn btn-success pb-1 ml-3'>Agregar</button>
+    </form>
+    </div class="center-block">
+        <div class="table_div col-3" style="overflow-x:auto;"> 
+            <div class="d-flex align-content-around flex-wrap">
+            <table id="table_student"> 
+                <thead>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Pasatiempos</th>
+                    <th>Eliminar</th>
+                    <th>Actualizar</th>
+                </thead>
+                <tbody id="students_list"></tbody>
+                <label type="number" id="student_id" hidden>0</label>
+            </table>
+        </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
